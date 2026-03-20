@@ -40,10 +40,12 @@
 }
 
 /* Show menu icon only on mobile */
-@media (max-width: 767px) {
-    .mobile-menu {
-        display: block;
-        text-align: right;
+@media (max-width: 991px) {
+    #header .mobile-menu {
+        margin-left: auto !important;
+        display: flex;
+        align-items: center;
+				padding-right: 30px;
     }
 
     .header-logo img {
@@ -51,7 +53,6 @@
         height: auto;
     }
 }
-
 </style>
 
 </head>
@@ -87,7 +88,7 @@
             </div>
 
             <!-- MOBILE MENU ICON -->
-            <div class="col-6 text-end mobile-menu">
+            <div class="col-6 mobile-menu">
                 <div class="menu-toggle">
                     <a href="#" style="color: white;">
                         <i class="fa fa-bars"></i>
@@ -118,7 +119,7 @@
 					<li><a href="#">Grocery HUB</a></li>
 					<li><a href="#">Books</a></li>
 					<li><a href="#">Mobile Accessories</a></li>
-					<li><a href="#">clothing</a></li>
+					<li><a href="#">Clothing</a></li>
 				</ul>
 				<!-- /NAV -->
 			</div>
@@ -133,7 +134,7 @@
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
-			<div class="row">
+			<div class="row text-center">
 				<!-- shop -->
 				<div class="col-md-4 col-xs-6">
 					<div class="shop">
@@ -178,10 +179,7 @@
 					</div>
 				</div>
 				<!-- /shop -->
-			</div>
-			<div class="row">
-				<!-- shop -->
-				<div class="col-md-4 col-xs-6">
+				 <div class="col-md-4 col-xs-6">
 					<div class="shop">
 						<div class="shop-img">
 							<img src="img/Grocery-Hub_98bb3298893659445252800fdcc23e52.jpg" width="350" height="250"
@@ -223,7 +221,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- /shop -->
 			</div>
 			<!-- /row -->
 		</div>
